@@ -2,7 +2,6 @@ package com.reschikov.testtask65apps.ui.employees
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -53,12 +52,6 @@ class EmployeesFragment : BaseFragment(R.layout.fragment_common_recycler), OnIte
                 }
             }
         }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.i("TAG EmplCard factory", System.identityHashCode(factory).toString())
-        Log.i("TAG EmplCard viewModel", System.identityHashCode(viewModel).toString())
     }
 
     override fun onItemClick(item: Employee) {

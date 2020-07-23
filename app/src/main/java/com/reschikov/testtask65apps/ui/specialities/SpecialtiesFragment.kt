@@ -2,7 +2,6 @@ package com.reschikov.testtask65apps.ui.specialities
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -44,12 +43,6 @@ class SpecialtiesFragment : BaseFragment(R.layout.fragment_common_recycler), OnI
         rv_list.adapter = specialityAdapter
         rv_list.setHasFixedSize(true)
         showTitleScreen(getString(R.string.title_specialities))
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.i("TAG Specialti factory", System.identityHashCode(factory).toString())
-        Log.i("TAG Specialti viewModel", System.identityHashCode(viewModel).toString())
     }
 
     override fun onItemClick(item: Speciality) {

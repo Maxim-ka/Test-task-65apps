@@ -30,7 +30,6 @@ class Repository @Inject constructor(
             saveReply(reply.response)
             return Pair(cached.getAllSpecialties(), null)
         } catch (e: Throwable) {
-
             return Pair(null, e)
         }
     }

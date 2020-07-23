@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/specialtiesFragment">
+    <fragment
+        android:id="@+id/specialtiesFragment"
+        android:name="com.reschikov.testtask65apps.ui.specialities.SpecialtiesFragment"
+        android:label="SpecialtiesFragment" >
+        <action
+            android:id="@+id/action_specialtiesFragment_to_employeeCardsFragment"
+            app:destination="@id/employeeCardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeCardsFragment"
+        android:name="com.reschikov.testtask65apps.ui.employees.EmployeesFragment"
+        android:label="EmployeeCardsFragment" >
+        <action
+            android:id="@+id/action_employeeCardsFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.reschikov.testtask65apps.ui.employeecard.EmployeeCardFragment"
+        android:label="EmployeeFragment" />
+</navigation>

@@ -1,0 +1,41 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="StyleItemCard" >
+        <item name="cardCornerRadius">@dimen/radius_corner_card</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardElevation">@dimen/elevation_card</item>
+        <item name="strokeWidth">@dimen/stroke_width</item>
+        <item name="strokeColor">@color/colorPrimaryDark</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+    </style>
+    
+    <style name="styleTextInputEditText">
+        <item name="android:focusable">false</item>
+        <item name="android:editable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:textSize">@dimen/text_size_card</item>
+    </style>
+
+    <style name="styleCardTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_margin">@dimen/indent_small</item>
+        <item name="hintTextAppearance">@style/styleHintText</item>
+        <item name="android:textColorHint">@android:color/black</item>
+    </style>
+
+    <style name="styleItemTextInputLayout" parent="styleCardTextInputLayout" >
+        <item name="android:background">@drawable/ripple_effect</item>
+    </style>
+
+    <style name="styleHintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_size_hint</item>
+    </style>
+
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Test-task-65apps</string>
+    <string name="hint_first_name">first name</string>
+    <string name="hint_last_name">last name</string>
+    <string name="hint_age">age</string>
+    <string name="hint_birthday">birthday</string>
+    <string name="hint_specialty">specialty</string>
+    <string name="err_no_network">No network connection</string>
+    <string name="but_ok">OK</string>
+    <string name="title_warning">Warning!</string>
+    <string name="warning_empty_list_received">empty data list received</string>
+    <string name="title_specialities">Specialities</string>
+    <string name="title_employee_card">employee card</string>
+</resources>

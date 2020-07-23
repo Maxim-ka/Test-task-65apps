@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/StyleItemCard">
+
+    <TextView
+        android:id="@+id/tv_specialty"
+        android:textSize="@dimen/text_size_specialty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/indent"
+        android:paddingBottom="@dimen/indent"
+        android:textAlignment="gravity"
+        android:background="@drawable/ripple_effect"
+        tools:text="developer"/>
+
+</com.google.android.material.card.MaterialCardView>

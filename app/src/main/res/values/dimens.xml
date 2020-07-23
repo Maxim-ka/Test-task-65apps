@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="radius_corner_card">4dp</dimen>
+    <dimen name="elevation_card">4dp</dimen>
+
+    <dimen name="text_size_hint">20sp</dimen>
+    <dimen name="text_size_card">28sp</dimen>
+    <dimen name="text_size_specialty">26sp</dimen>
+
+    <dimen name="indent">8dp</dimen>
+    <dimen name="indent_small">4dp</dimen>
+
+    <dimen name="stroke_width">2dp</dimen>
+
+</resources>

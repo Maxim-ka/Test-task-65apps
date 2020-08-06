@@ -2,7 +2,7 @@ package com.reschikov.testtask65apps.repository
 
 import com.reschikov.testtask65apps.cache.model.Employee
 import com.reschikov.testtask65apps.cache.model.Speciality
-import com.reschikov.testtask65apps.entity.dot.EmployeeCard
+import com.reschikov.testtask65apps.cache.model.EmployeeCard
 
 interface Derivable {
 

@@ -3,7 +3,7 @@ package com.reschikov.testtask65apps.ui.employeecard
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.reschikov.testtask65apps.entity.dot.EmployeeCard
+import com.reschikov.testtask65apps.cache.model.EmployeeCard
 import com.reschikov.testtask65apps.repository.Derivable
 import com.reschikov.testtask65apps.ui.base.BaseViewModel
 import kotlinx.coroutines.Dispatchers

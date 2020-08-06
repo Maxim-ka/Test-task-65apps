@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.reschikov.testtask65apps.DASH
 import com.reschikov.testtask65apps.KEY_EMPLOYEE_CARD
 import com.reschikov.testtask65apps.R
-import com.reschikov.testtask65apps.entity.dot.EmployeeCard
+import com.reschikov.testtask65apps.cache.model.EmployeeCard
 import com.reschikov.testtask65apps.getTextAge
 import com.reschikov.testtask65apps.ui.base.BaseFragment
 import kotlinx.android.synthetic.main.fragment_employee_card.*

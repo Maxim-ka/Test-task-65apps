@@ -18,26 +18,6 @@ class EmployeesAdapter(onItemClickListener: OnItemClickListener<Employee>) :
         return EmployeeCardViewHolder(view)
     }
 
-    override fun onViewAttachedToWindow(holder: BaseViewHolder<Employee>) {
-        super.onViewAttachedToWindow(holder)
-        with(onItemClickListener) {
-            holder.containerView.also {view ->
-                view.tiet_first_name.setOnClickListener { onItemClick(list[holder.adapterPosition]) }
-                view.tiet_last_name.setOnClickListener { onItemClick(list[holder.adapterPosition]) }
-                view.tiet_age.setOnClickListener { onItemClick(list[holder.adapterPosition]) }
-            }
-        }
-    }
-
-    override fun onViewDetachedFromWindow(holder: BaseViewHolder<Employee>) {
-        super.onViewDetachedFromWindow(holder)
-        with(holder.containerView){
-            tiet_first_name.setOnClickListener (null)
-            tiet_last_name.setOnClickListener (null)
-            tiet_age.setOnClickListener (null)
-        }
-    }
-
     class EmployeeCardViewHolder(view: View) : BaseViewHolder<Employee>(view){
 
         override fun show(item: Employee) {

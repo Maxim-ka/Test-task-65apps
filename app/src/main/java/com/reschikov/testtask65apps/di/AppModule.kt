@@ -8,6 +8,7 @@ import com.reschikov.testtask65apps.cache.AppDataBaseDao
 import com.reschikov.testtask65apps.cache.CacheProvider
 import com.reschikov.testtask65apps.di.adapter.AdapterModule
 import com.reschikov.testtask65apps.di.adapter.ScopeFragment
+import com.reschikov.testtask65apps.repository.Derivable
 import com.reschikov.testtask65apps.repository.*
 import com.reschikov.testtask65apps.ui.base.BaseFragment
 import com.reschikov.testtask65apps.ui.employeecard.EmployeeCardFragment

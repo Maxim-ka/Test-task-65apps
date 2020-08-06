@@ -1,6 +1,8 @@
 package com.reschikov.testtask65apps.ui.base
 
+import android.view.MotionEvent
 import android.view.View
+import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.reschikov.testtask65apps.ui.OnItemClickListener
 import kotlinx.android.extensions.LayoutContainer
@@ -22,12 +24,15 @@ abstract class BaseAdapter<T>(protected val onItemClickListener: OnItemClickList
 
     override fun onViewAttachedToWindow(holder: BaseViewHolder<T>) {
         super.onViewAttachedToWindow(holder)
-        holder.containerView.setOnClickListener { onItemClickListener.onItemClick(list[holder.adapterPosition]) }
+        holder.itemView.setOnTouchListener { v, event ->
+            onItemClickListener.onItemClick(list[holder.adapterPosition])
+            return@setOnTouchListener v.performClick()
+        }
     }
 
     override fun onViewDetachedFromWindow(holder: BaseViewHolder<T>) {
         super.onViewDetachedFromWindow(holder)
-        holder.containerView.setOnClickListener(null)
+        holder.itemView.setOnTouchListener(null)
     }
 
     abstract class BaseViewHolder<T>(override val containerView: View) :

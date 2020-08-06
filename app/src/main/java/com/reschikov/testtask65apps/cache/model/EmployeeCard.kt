@@ -1,4 +1,4 @@
-package com.reschikov.testtask65apps.entity.dot
+package com.reschikov.testtask65apps.cache.model
 
 import androidx.room.Embedded
 import androidx.room.Junction

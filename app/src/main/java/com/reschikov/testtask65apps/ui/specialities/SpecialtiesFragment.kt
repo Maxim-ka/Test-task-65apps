@@ -3,6 +3,7 @@ package com.reschikov.testtask65apps.ui.specialities
 import android.content.Context
 import android.os.Bundle
 import android.view.View
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.reschikov.testtask65apps.KEY_SPECIALTY_CODE
@@ -19,6 +20,7 @@ import javax.inject.Inject
 class SpecialtiesFragment : BaseFragment(R.layout.fragment_common_recycler), OnItemClickListener<Speciality> {
 
     @Inject lateinit var specialityAdapter : SpecialtiesAdapter
+//    private val specialtiesViewModel by viewModels<SpecialtiesViewModel> { factory }
 
     private val observerListSpecialties by lazy {
         Observer<List<Speciality>> {

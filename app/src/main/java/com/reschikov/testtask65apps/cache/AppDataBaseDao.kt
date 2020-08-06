@@ -4,7 +4,7 @@ import androidx.room.*
 import com.reschikov.testtask65apps.cache.model.Employee
 import com.reschikov.testtask65apps.cache.model.EmployeesSpecialities
 import com.reschikov.testtask65apps.cache.model.Speciality
-import com.reschikov.testtask65apps.entity.dot.EmployeeCard
+import com.reschikov.testtask65apps.cache.model.EmployeeCard
 
 @Dao
 interface AppDataBaseDao {

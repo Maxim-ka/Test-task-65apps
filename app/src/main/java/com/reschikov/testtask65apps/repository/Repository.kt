@@ -3,7 +3,7 @@ package com.reschikov.testtask65apps.repository
 import com.reschikov.testtask65apps.cache.model.Employee
 import com.reschikov.testtask65apps.cache.model.EmployeesSpecialities
 import com.reschikov.testtask65apps.cache.model.Speciality
-import com.reschikov.testtask65apps.entity.dot.EmployeeCard
+import com.reschikov.testtask65apps.cache.model.EmployeeCard
 import com.reschikov.testtask65apps.net.model.Response
 import dagger.Lazy
 import javax.inject.Inject
@@ -11,7 +11,8 @@ import javax.inject.Inject
 class Repository @Inject constructor(
                  private val requested: Lazy<Requested>,
                  private val transformable: Lazy<Transformable>,
-                 private val cached: Cached) : Derivable {
+                 private val cached: Cached) :
+    Derivable {
 
     override suspend fun getListSpecialities(): Pair<List<Speciality>?, Throwable?> {
         try {
